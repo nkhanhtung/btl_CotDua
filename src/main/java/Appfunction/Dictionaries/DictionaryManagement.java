@@ -50,6 +50,7 @@ public class DictionaryManagement {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        dictionary.addWordsFromList(result);
     }
 
 
@@ -91,6 +92,7 @@ public class DictionaryManagement {
         }
     }
 
+
     public Word Lookup(String word_target) {
         return BinaryLookup(0, words_database.size() - 1, word_target);
     }
@@ -107,4 +109,36 @@ public class DictionaryManagement {
             e.printStackTrace();
         }
     }
+    public void dictionarySearcher() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Nhập chuỗi cần tìm kiếm: ");
+        String searchString = scanner.nextLine();
+        ArrayList<Appfunction.Dictionaries.Word> results = new ArrayList<>();
+        for (Appfunction.Dictionaries.Word word : dictionary.words) {
+            String word_target = word.getWord_target();
+
+            if (word_target.startsWith(searchString)) {
+                results.add(word);
+            }
+        }
+    }
+    public ArrayList<Word> dictionarySearcher(String searchText) {
+        if (searchText.equals("")) return new ArrayList<>(); // Trả về danh sách rỗng nếu searchText là chuỗi rỗng
+
+        ArrayList<Word> results = new ArrayList<>(); // Tạo một danh sách kết quả mới
+
+        for (Word word : dictionary.getWords()) { // Lặp qua từng từ trong danh sách từ điển
+            String wordTarget = word.getWord_target(); // Lấy từ tiếng Anh của từ
+
+            // Kiểm tra xem từ tiếng Anh có bắt đầu bằng chuỗi searchText không
+            if (wordTarget.startsWith(searchText)) {
+                results.add(word); // Nếu có, thêm từ vào danh sách kết quả
+            }
+        }
+
+        return results; // Trả về danh sách kết quả sau khi đã tìm kiếm xong
+    }
+
+
 }
