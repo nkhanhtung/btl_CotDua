@@ -238,10 +238,10 @@ public class CrosswordGame {
     }
 
     // Hàm main để bắt đầu trò chơi
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         CrosswordGame game = new CrosswordGame();
         game.startGame();
-    }
+    }*/
 
     // Lớp Word để lưu trữ từ vựng và thông tin về vị trí của từ
     class Word {
