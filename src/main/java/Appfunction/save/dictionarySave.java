@@ -1,9 +1,8 @@
 package Appfunction.save;
 
+import Appfunction.Dictionaries.HTMLDictionaryCommanline;
 import Appfunction.Dictionaries.Word;
-import Appfunction.HTMLDictionaryCommanline;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
