@@ -2,6 +2,8 @@ package Appfunction.Dictionaries;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class DictionaryManagement {
@@ -123,22 +125,44 @@ public class DictionaryManagement {
             }
         }
     }
-    public ArrayList<Word> dictionarySearcher(String searchText) {
+    public ArrayList<Word> binaryDictionarySearcher(int begin, int end, String searchText) {
         if (searchText.equals("")) return new ArrayList<>(); // Trả về danh sách rỗng nếu searchText là chuỗi rỗng
 
         ArrayList<Word> results = new ArrayList<>(); // Tạo một danh sách kết quả mới
 
-        for (Word word : dictionary.getWords()) { // Lặp qua từng từ trong danh sách từ điển
-            String wordTarget = word.getWord_target(); // Lấy từ tiếng Anh của từ
-
-            // Kiểm tra xem từ tiếng Anh có bắt đầu bằng chuỗi searchText không
-            if (wordTarget.startsWith(searchText)) {
-                results.add(word); // Nếu có, thêm từ vào danh sách kết quả
+        // Sắp xếp danh sách từ điển theo từ tiếng Anh để sử dụng tìm kiếm nhị phân
+        Collections.sort(dictionary.getWords(), new Comparator<Word>() {
+            @Override
+            public int compare(Word word1, Word word2) {
+                return word1.getWord_target().compareTo(word2.getWord_target());
             }
+        });
+
+        // Thực hiện tìm kiếm nhị phân trên danh sách từ điển đã sắp xếp
+        ArrayList<Word> index = binaryDictionarySearcher(begin,end,searchText);
+
+        // Nếu không tìm thấy từ bắt đầu bằng searchText, trả về danh sách kết quả trống
+        if (index == -1) return results;
+
+        // Thêm từ kết quả vào danh sách kết quả
+        results.add(dictionary.getWords().get(index));
+
+        // Tìm các từ khác có cùng tiền tố với searchText trong danh sách từ điển
+        int left = index - 1;
+        while (left >= 0 && dictionary.getWords().get(left).getWord_target().startsWith(searchText)) {
+            results.add(dictionary.getWords().get(left));
+            left--;
+        }
+
+        int right = index + 1;
+        while (right < dictionary.getWords().size() && dictionary.getWords().get(right).getWord_target().startsWith(searchText)) {
+            results.add(dictionary.getWords().get(right));
+            right++;
         }
 
         return results; // Trả về danh sách kết quả sau khi đã tìm kiếm xong
     }
+
 
 
 }
