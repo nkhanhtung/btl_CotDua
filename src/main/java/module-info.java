@@ -4,6 +4,7 @@ module org.example.ung_dung_hoc_tieng_anh {
 
     requires com.dlsc.formsfx;
     requires com.almasb.fxgl.all;
+    requires freetts;
 
     opens org.example.ung_dung_hoc_tieng_anh to javafx.fxml;
     exports org.example.ung_dung_hoc_tieng_anh;
