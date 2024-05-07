@@ -4,7 +4,7 @@
 Author: Group codeDừa
 
 Nguyen Khanh Tung - 
-Hoang Si Toan - 
+Hoang Sy Toan - 
 Nguyen Ba Quang - 
 Description:
 Our application, developed in Java utilizing the JavaFX library, aims to facilitate English learning. It follows the MVC model and incorporates two dictionaries: English-Vietnamese and Vietnamese-English, with data stored in E_V.txt and V_E.txt files respectively.
