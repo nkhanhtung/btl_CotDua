@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo2.CrosswordController">
+    <children>
+      <ImageView fitHeight="650.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true" />
+    <!-- Crossword Grid (Moved to the top) -->
+    <GridPane layoutX="14.0" layoutY="32.0" prefHeight="250.0" prefWidth="572.0">
+        <Label fx:id="cell00" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+        <Label fx:id="cell01" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label fx:id="cell02" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Label fx:id="cell03" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+        <Label fx:id="cell04" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+        <Label fx:id="cell05" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+        <Label fx:id="cell06" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+        <Label fx:id="cell07" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+        <Label fx:id="cell08" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+        <Label fx:id="cell09" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+        <Label fx:id="cell010" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" />
+
+        <Label fx:id="cell10" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label fx:id="cell11" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label fx:id="cell12" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Label fx:id="cell13" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        <Label fx:id="cell14" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+        <Label fx:id="cell15" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+        <Label fx:id="cell16" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+        <Label fx:id="cell17" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+        <Label fx:id="cell18" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+        <Label fx:id="cell19" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+        <Label fx:id="cell110" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="1" />
+
+        <!-- Row 2 -->
+        <Label fx:id="cell20" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.rowIndex="2" />
+        <Label fx:id="cell21" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label fx:id="cell22" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Label fx:id="cell23" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <Label fx:id="cell24" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+        <Label fx:id="cell25" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+        <Label fx:id="cell26" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+        <Label fx:id="cell27" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+        <Label fx:id="cell28" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+        <Label fx:id="cell29" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+        <Label fx:id="cell210" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="2" />
+        <!-- Add labels for other columns in row 2 -->
+        <Label fx:id="cell30" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.rowIndex="3" />
+        <Label fx:id="cell31" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label fx:id="cell32" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Label fx:id="cell33" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Label fx:id="cell34" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+        <Label fx:id="cell35" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+        <Label fx:id="cell36" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+        <Label fx:id="cell37" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+        <Label fx:id="cell38" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+        <Label fx:id="cell39" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+        <Label fx:id="cell310" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="3" />
+        <!-- Continue adding labels for other rows similarly -->
+        <Label fx:id="cell40" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Label fx:id="cell41" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label fx:id="cell42" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Label fx:id="cell43" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+        <Label fx:id="cell44" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+        <Label fx:id="cell45" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+        <Label fx:id="cell46" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+        <Label fx:id="cell47" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+        <Label fx:id="cell48" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+        <Label fx:id="cell49" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+        <Label fx:id="cell410" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="4" />
+
+        <!-- Row 8 -->
+        <Label fx:id="cell50" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+        <Label fx:id="cell51" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label fx:id="cell52" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+        <Label fx:id="cell53" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+        <Label fx:id="cell54" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+        <Label fx:id="cell55" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+        <Label fx:id="cell56" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+        <Label fx:id="cell57" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+        <Label fx:id="cell58" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+        <Label fx:id="cell59" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+        <Label fx:id="cell510" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="5" />
+
+        <Label fx:id="cell60" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+        <Label fx:id="cell61" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+        <Label fx:id="cell62" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+        <Label fx:id="cell63" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+        <Label fx:id="cell64" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+        <Label fx:id="cell65" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+        <Label fx:id="cell66" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+        <Label fx:id="cell67" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+        <Label fx:id="cell68" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+        <Label fx:id="cell69" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+        <Label fx:id="cell610" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="6" />
+
+        <Label fx:id="cell70" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+        <Label fx:id="cell71" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <Label fx:id="cell72" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+        <Label fx:id="cell73" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+        <Label fx:id="cell74" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+        <Label fx:id="cell75" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+        <Label fx:id="cell76" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+        <Label fx:id="cell77" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+        <Label fx:id="cell78" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+        <Label fx:id="cell79" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+        <Label fx:id="cell710" style="-fx-font-size: 20pt; -fx-padding: 10px; -fx-background-color: #FFFFFF;" GridPane.columnIndex="21" GridPane.rowIndex="7" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+    </GridPane>
+
+        <Label layoutX="600.0" layoutY="32.0" text="Enter Answer:" />
+        <TextField fx:id="inputField" layoutX="712.0" layoutY="28.0" />
+
+        <!-- Buttons -->
+        <Button layoutX="600.0" layoutY="78.0" mnemonicParsing="false" onAction="#submitAnswer" text="Submit Answer" />
+
+        <Button layoutX="600.0" layoutY="128.0" mnemonicParsing="false" onAction="#exitGame" text="Exit" />
+
+        <Label fx:id="messageLabel" layoutX="600.0" layoutY="200.0" />
+
+        <Label fx:id="resultLabel" layoutX="14.0" layoutY="550.0" />
+
+    </children>
+    <!-- Other elements below -->
+</AnchorPane>
