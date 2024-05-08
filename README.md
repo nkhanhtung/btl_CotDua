@@ -16,6 +16,8 @@ The application has two types of dictionaries: English-Vietnamese and Vietnamese
 The application use E_V.txt and V_E.txt files to store data.
 # UML diagram
 ![UML diagram](
+![image](https://github.com/nkhanhtung/btl_CotDua/assets/161499853/a4156716-fc3a-4c9c-9ab8-24357b6ffd2b)
+
 
 # Installation
 Clone the project from the repository.
@@ -40,6 +42,9 @@ When you find 6 words you win that level. A box will appear you have 2 option: y
 To quit the game click Exit button.
 # Demo
 ![Demo](
+![image](https://github.com/nkhanhtung/btl_CotDua/assets/161499853/2c7baab7-8059-43c0-94a9-05cdeba1b12d)
+![image](https://github.com/nkhanhtung/btl_CotDua/assets/161499853/2cddf969-6a78-48f1-8c6c-957f19a888a9)
+
 
 # Future improvements
 Add more dictionaries.
