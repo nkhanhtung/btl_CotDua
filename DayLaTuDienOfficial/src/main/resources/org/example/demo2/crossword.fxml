@@ -164,7 +164,7 @@
 
         <Button layoutX="812.0" layoutY="79.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="26.0" prefWidth="73.0" styleClass="btn_save" stylesheets="@MainScreen.css" text="Exit" />
 
-        <Label fx:id="messageLabel" alignment="TOP_LEFT" layoutX="627.0" layoutY="130.0" prefHeight="332.0" prefWidth="258.0" style="-fx-background-color: #FFFFFF;">
+        <Label fx:id="messageLabel" alignment="TOP_LEFT" layoutX="627.0" layoutY="130.0" prefHeight="188.0" prefWidth="258.0" style="-fx-background-color: #FFFFFF;">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Label>
@@ -173,6 +173,11 @@
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font></Label>
+      <Label fx:id="achieve" layoutX="627.0" layoutY="325.0" prefHeight="198.0" prefWidth="258.0" style="-fx-background-color: #FFFFFF;">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
 
     </children>
     <!-- Other elements below -->
