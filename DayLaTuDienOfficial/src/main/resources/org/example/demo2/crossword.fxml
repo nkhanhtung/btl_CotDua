@@ -173,7 +173,7 @@
          <font>
             <Font name="System Bold Italic" size="16.0" />
          </font></Label>
-      <Label fx:id="achieve" layoutX="627.0" layoutY="325.0" prefHeight="198.0" prefWidth="258.0" style="-fx-background-color: #FFFFFF;">
+      <Label fx:id="achieve" alignment="TOP_LEFT" layoutX="627.0" layoutY="325.0" prefHeight="198.0" prefWidth="258.0" style="-fx-background-color: #FFFFFF;">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
