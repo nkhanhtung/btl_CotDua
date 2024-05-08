@@ -118,7 +118,7 @@ public class CrosswordController {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Congratulations!");
         alert.setHeaderText("You have completed the crossword!");
-        alert.setContentText("Do you want to play again?");
+        alert.setContentText("Do you want to continue to earn more points?");
 
         ButtonType buttonTypeYes = new ButtonType("Yes");
         ButtonType buttonTypeNo = new ButtonType("No");
