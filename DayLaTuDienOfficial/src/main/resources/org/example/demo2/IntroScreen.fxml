@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="900.0" style="-fx-background-color: #99CCFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo2.IntroScreenController">
+   <children>
+      <ImageView fitHeight="650.0" fitWidth="900.0" layoutX="43.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Data/pictures/1520200553248.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="187.0" layoutY="173.0" prefHeight="275.0" prefWidth="523.0" styleClass="wrapper" stylesheets="@IntroScreen.css">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="14.0" prefHeight="46.0" prefWidth="511.0" text="Welcome to amazing world of CotDua!" textFill="#fcfafa">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+            </Label>
+            <Button fx:id="StartButton" layoutX="106.0" layoutY="99.0" mnemonicParsing="false" onAction="#onClicktolearn" prefHeight="50.0" prefWidth="324.0" stylesheets="@IntroScreen.css" text="Begin to train now!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="GameButton" layoutX="106.0" layoutY="182.0" mnemonicParsing="false" onAction="#onClicktoGames" prefHeight="50.0" prefWidth="324.0" stylesheets="@IntroScreen.css" text="Start a game!">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
