@@ -42,7 +42,8 @@ When you find 6 words you win that level. A box will appear you have 2 option: y
 To quit the game click Exit button.
 # Demo
 ![Demo](
-![image](https://github.com/nkhanhtung/btl_CotDua/assets/161499853/2c7baab7-8059-43c0-94a9-05cdeba1b12d)
+![image](https://github.com/nkhanhtung/btl_CotDua/assets/161499853/0548a293-3912-42f0-ab25-ad645b4ed340)
+
 ![image](https://github.com/nkhanhtung/btl_CotDua/assets/161499853/2cddf969-6a78-48f1-8c6c-957f19a888a9)
 
 
