@@ -18,6 +18,8 @@ public class CrosswordController {
     private Label clueLabel;
     @FXML
     private Label messageLabel;
+    @FXML
+    private Label achieve;
 
     @FXML
     private TextField inputField;
@@ -45,6 +47,7 @@ public class CrosswordController {
     private CrosswordGame game;
     private int wrongAnswerCount;
     private int previousScore = 0;
+    private String san = "Correct answers :\n";
 
     public void initialize() {
         game = new CrosswordGame();
@@ -88,7 +91,8 @@ public class CrosswordController {
                 game.saveCorrectAnswer(userInput);
                 game.increaseScore(10);
                 previousScore = game.getScore();
-
+                san = san + userInput + "\n";
+                achieve.setText(san);
                 inputField.clear();
                 messageLabel.setText("Correct answer");
                 if (game.isAllAnsweredCorrectly()) {
@@ -96,7 +100,7 @@ public class CrosswordController {
                 }
             } else {
                 wrongAnswerCount++;
-                if (wrongAnswerCount < 5) {
+                if (wrongAnswerCount < 2) {
                     messageLabel.setText("Incorrect answer. Try again!");
                 } else {
                     String s = "";
