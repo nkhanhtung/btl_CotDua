@@ -83,4 +83,16 @@ public class DictionaryCommandline {
         Collections.sort(result, new SortWords());
         return result;
     }
+
+    public void addWord(Word word) {
+        dictionary.add(word);
+    }
+
+    public void removeWord(Word word) {
+        dictionary.getWords().remove(word);
+    }
+
+    public void editWord(Word word, String explain) {
+        word.setWord_explain(explain);
+    }
 }
