@@ -1,58 +1,60 @@
+## Author
+Group 1
 
- 																					English Learning Support Application in Java
+Nguyen Khanh Tung - 23020434
 
-Author: Group codeDừa
+Hoang Sy Toan - 23020426 
 
-Nguyen Khanh Tung - 
-Hoang Sy Toan - 
-Nguyen Ba Quang - 
-Description:
-Our application, developed in Java utilizing the JavaFX library, aims to facilitate English learning. It follows the MVC model and incorporates two dictionaries: English-Vietnamese and Vietnamese-English, with data stored in E_V.txt and V_E.txt files respectively.
+Nguyen Ba Quang - 23020412
+# Description
+The application is designed to support learning English. The application is written in Java and uses the JavaFX library. The application is based on the MVC model. The application has two types of dictionaries: English-Vietnamese and Vietnamese-English. The application use E_V.txt and V_E.txt files to store data.
 
-Installation:
+The application is designed to support learning English.
+The application is written in Java and uses the JavaFX library.
+The application is based on the MVC model.
+The application has two types of dictionaries: English-Vietnamese and Vietnamese-English.
+The application use E_V.txt and V_E.txt files to store data.
+# UML diagram
+![UML diagram](
 
+# Installation
 Clone the project from the repository.
-Open the project in your preferred IDE.
+Open the project in the IDE.
 Run the project.
-Modify data by editing E_V.txt and V_E.txt files if needed.
-Usage:
+If you want to change the data, you can change the E_V.txt and V_E.txt files.
+## Usage
+Select mode: 
 
-Choose dictionary mode: English-Vietnamese or Vietnamese-English.
-Search for a word, click "Search" to display its meaning.
-Add new word: Click "Add" (+ icon).
-Delete word: Click "Delete" (- icon).
-Edit word: Click "Edit" (Pencil icon).
-Save changes: Click "Save" (Disk icon).
-Pronounce word: Click "Pronounce" (Speaker icon).
-Practice: Click "Practice" (Play icon) to access the Game window.
-In the Game window, click "Start" to begin.
-Enter missing letters for displayed words, click "Check" to verify.
-Correct answers increase score by 1, incorrect decrease by 1.
-Exit game: Click "Exit" (Cross icon).
-Play again: Click "Play again" (Play icon).
-Save score: Click "Save" (Disk icon).
-Load score: Click "Load" (Folder icon).
-Reset score: Click "Reset" (Reset icon).
-Exit application: Click "Exit" (Cross icon).
-Future Improvements:
+Study:
+To start study click Begin to train now
+Search for a word in the dictionary and click the Search button, then the right side of the window will display the meaning of the word.There are 3 option for you: Click the audio icon to use text to speech, Click the star icon to add word to bookmark, Click trash icon to delete that word.
+To add a new word, click the Add button (Plus icon).
+To edit a word, click the Edit button (Pencil icon).
+To save the changes, click the Summit button. 
 
-Expand dictionaries.
-Develop more complex games.
-Optimize word lookup algorithm.
-Transition to database for data storage.
-Integrate with Google Translate API for paragraph and document translation.
-Incorporate Google Speech to Text API for speech-to-text conversion.
-Enhance user interface.
-Contributing:
-We welcome pull requests. For significant changes, please initiate discussion by opening an issue.
+Pratice : 
+To practice, click the  Start a game in main screen, then the application will display a Game window.
+This game gives you a table of letters and your task is to find the letters that combine to form meaningful words.
+Fill in the words in the available box and click summit button. If the answer is correct, the text correct will appear. Each correct answer will get 10 points. The correct word will disappear.
+When you find 6 words you win that level. A box will appear you have 2 option: yes(you will come to the next level) and no(show your points).
+To quit the game click Exit button.
+# Demo
+![Demo](
 
-Project Status: Completed
+# Future improvements
+Add more dictionaries.
+Add more complex games.
+Optimize the word lookup algorithm.
+Use a database to store data.
+Integrate the application with API of Google Translate to translate paragraphs and whole documents.
+Integrate the application with API of Google Speech to Text to convert speech to text.
+Improve the user interface.
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Notes:
-This application is created for educational purposes.
+# Project status
+The project is completed.
 
-
-
-
-
-
+# Notes
+The application is written for educational purposes.
+Viết cho dự án OOP nhóm Code 🥥
