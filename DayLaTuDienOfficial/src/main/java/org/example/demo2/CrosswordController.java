@@ -97,6 +97,8 @@ public class CrosswordController {
                 messageLabel.setText("Correct answer");
                 if (game.isAllAnsweredCorrectly()) {
                     showConfirmationDialog();
+                    san = "";
+                    achieve.setText("");
                 }
             } else {
                 wrongAnswerCount++;
