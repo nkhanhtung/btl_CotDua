@@ -10,6 +10,7 @@ public class ReadWordsFromFile {
 
     public static ArrayList<Word> read(String path) {
         ArrayList<Word> Store = new ArrayList<>();
+
         try {
             File file = new File(path);
             FileReader fileReader = new FileReader(file);
@@ -24,13 +25,10 @@ public class ReadWordsFromFile {
                 }
             }
 
-            bufferedReader.close();
-            fileReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("file not found");
         } catch (IOException e) {
-            System.out.println("Error when import from file");
+            System.out.println("Error when importing from file");
         }
+
         return Store;
     }
 }

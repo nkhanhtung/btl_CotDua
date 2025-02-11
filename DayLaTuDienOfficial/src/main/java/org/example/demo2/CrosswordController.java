@@ -94,7 +94,7 @@ public class CrosswordController {
                 san = san + userInput + "\n";
                 achieve.setText(san);
                 inputField.clear();
-                messageLabel.setText("Correct answer");
+                messageLabel.setText("That's a correct answer!");
                 if (game.isAllAnsweredCorrectly()) {
                     showConfirmationDialog();
                     san = "";

@@ -40,7 +40,7 @@ public class AddScreenController {
                 this.English = target;
                 this.Vietnamese = explain;
                 Word word = new Word(English, Vietnamese);
-                wrt.SaveAWord(word, "src/main/resources/Data/Dictionary.txt");
+                wrt.SaveAWord(word, "Dictionary.txt");
                 word_to_add.clear();
                 definitions.clear();
                 message.setText("Word added successfully!");

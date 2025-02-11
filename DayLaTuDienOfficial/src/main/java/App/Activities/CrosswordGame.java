@@ -18,7 +18,7 @@ public class CrosswordGame {
     }
 
     public List<Word1> reader(String path) {
-        List<Word1> Store = new ArrayList<>();
+        List<Word1> store = new ArrayList<>();
         try {
             File file = new File(path);
             FileReader fileReader = new FileReader(file);
@@ -29,24 +29,22 @@ public class CrosswordGame {
                 if (parts.length >= 2) {
                     String target = parts[0];
                     String explain = parts[1];
-                    Store.add(new Word1(target, explain));
+                    store.add(new Word1(target, explain));
                 }
             }
-
-            bufferedReader.close();
-            fileReader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("file not found");
         } catch (IOException e) {
-            System.out.println("Error when import from file");
+            System.out.println("Lỗi khi đọc file: " + e.getMessage());
         }
-        return Store;
+        return store;
     }
+
 
     public List<Word1> Insert() {
-        List<Word1> result = this.reader("src/main/resources/Data/Dictionary.txt");
+        // Sử dụng đường dẫn từ classpath
+        List<Word1> result = this.reader("D:/UET_PROJECTS/CotDua_OOP/btl_CotDua/Dictionary.txt");
         return result;
     }
+
 
     public CrosswordGame() {
         crosswordGrid = new char[8][11];
@@ -62,8 +60,11 @@ public class CrosswordGame {
 
     private void loadWordsAndClues() {
         allwords = this.Insert();
+        if (allwords == null || allwords.isEmpty()) {
+            throw new IllegalStateException("Danh sách allwords trống! Không thể tải từ và gợi ý.");
+        }
         Random random = new Random();
-        while (words.size() < 6) {
+        while (words.size() < 6 && !allwords.isEmpty()) {
             int index = random.nextInt(allwords.size());
             Word1 selectedWord = allwords.get(index);
             if (!words.contains(selectedWord)) {

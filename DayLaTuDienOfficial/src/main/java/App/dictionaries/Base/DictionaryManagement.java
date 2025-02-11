@@ -1,14 +1,7 @@
 package App.dictionaries.Base;
 
-import App.Supporting.ReadWordsFromFile;
-import App.Supporting.SortWords;
 import App.Supporting.WriteWordsToFile;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class DictionaryManagement {

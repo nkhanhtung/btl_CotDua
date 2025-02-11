@@ -13,14 +13,14 @@ public class DictionaryCommandline {
 
     public void insertFromFile() {
         ReadWordsFromFile rd = new ReadWordsFromFile();
-        ArrayList<Word> data = rd.read("src/main/resources/Data/Dictionary.txt");
+        ArrayList<Word> data = rd.read("D:/UET_PROJECTS/CotDua_OOP/btl_CotDua/Dictionary.txt");
         Collections.sort(data, new SortWords());
         dictionary.addWordsFromList(data);
     }
 
     public ArrayList<Word> InsertFromFile() {
         ReadWordsFromFile rd = new ReadWordsFromFile();
-        ArrayList<Word> finish = rd.read("src/main/resources/Data/Dictionary.txt");
+        ArrayList<Word> finish = rd.read("D:/UET_PROJECTS/CotDua_OOP/btl_CotDua/Dictionary.txt");
         Collections.sort(finish, new SortWords());
         return finish;
     }

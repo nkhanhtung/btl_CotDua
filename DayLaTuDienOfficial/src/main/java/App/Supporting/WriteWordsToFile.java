@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class WriteWordsToFile {
     public void write(ArrayList<Word> words) {
-        this.write(words, "src/main/resources/Data/Dictionary.txt");
+        this.write(words, "D:/UET_PROJECTS/CotDua_OOP/btl_CotDua/Dictionary.txt");
     }
 
     public void write(ArrayList<Word> words, String path) {
