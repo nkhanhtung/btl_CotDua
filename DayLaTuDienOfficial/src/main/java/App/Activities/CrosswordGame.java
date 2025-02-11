@@ -41,7 +41,7 @@ public class CrosswordGame {
 
     public List<Word1> Insert() {
         // Sử dụng đường dẫn từ classpath
-        List<Word1> result = this.reader("D:/UET_PROJECTS/CotDua_OOP/btl_CotDua/Dictionary.txt");
+        List<Word1> result = this.reader("Dictionary.txt");
         return result;
     }
 
