@@ -55,7 +55,7 @@ public class WordViewController {
             String spelling = EnglishWord.getText();
             String mean = explore.getText();
             Word word = new Word(spelling, mean);
-            writeWordsToFile.SaveAWord(word, "src/main/resources/Data/BookmarkList.txt");
+            writeWordsToFile.SaveAWord(word, "BookmarkList.txt");
         }
     }
 }

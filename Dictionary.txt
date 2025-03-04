@@ -50,7 +50,6 @@ anxious	lo lắng
 apex	đỉnh điểm
 appeal	hấp dẫn
 applaud	tán thưởng
-apple	Quả táo
 appraise	đánh giá
 apprehend	hiểu rõ
 apricot	mơ hồng
@@ -1125,8 +1124,6 @@ night	đêm
 night	đêm
 nine	chín
 nine	chín
-no	không
-no	không
 noble	quý tộc
 noble	quý tộc
 noble	quý tộc
@@ -1421,6 +1418,7 @@ pond	ao
 pool	hồ bơi
 pop	nhảy lên
 popular	phổ biến
+pork	Thịt heo
 portion	phần
 portrait	chân dung
 pose	đặt tư thế
@@ -1703,7 +1701,10 @@ rubber	cục tẩy
 tan	Làn da rám nắng
 tradition	Truyền thống
 travel	Đi du lịch
-zodiac	cung hoàng đạo
-zoo	Sở thú
 zebra	Con ngựa vằn
-pork	Thịt heo
+zodiac	cung hoàng đạo
+zombie	Thây ma
+zoo	Sở thú
+apple	Quả táo
+famous	Nổi tiếng
+coral	San hô

@@ -29,7 +29,7 @@ public class ActionForBookmarkController {
     public void bookmarkClickOn(ActionEvent event) {
         if (event.getSource() == btn_show) {
             ArrayList<Word> focus;
-            focus = readWordsFromFile.read("src/main/resources/Data/BookmarkList.txt");
+            focus = readWordsFromFile.read("BookmarkList.txt");
             Collections.sort(focus, new SortWords());
             ArrayList<String> number = new ArrayList<>();
             for (Word word : focus) {
